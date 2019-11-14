@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mainacad</groupId>
+  <artifactId>main-academy-java-my-parser</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <name>main-academy-java-my-parser</name>
+  <!-- FIXME change it to the project's website -->
+  <url>https://github.com/Antoninadan</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <junit.version>5.5.2</junit.version>
+    <lombok.version>1.18.8</lombok.version>
+    <jsoup.version>1.11.3</jsoup.version>
+    <jaxb.version>2.3.1</jaxb.version>
+
+  </properties>
+
+  <dependencies>
+
+  <!--LOMBOK-->
+  <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>${lombok.version}</version>
+    <scope>provided</scope>
+  </dependency>
+
+  <!--JUNIT-->
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>${junit.version}</version>
+    <scope>test</scope>
+  </dependency>
+
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>${junit.version}</version>
+    <scope>test</scope>
+  </dependency>
+
+  <!--      JSOUP-->
+  <dependency>
+    <groupId>org.jsoup</groupId>
+    <artifactId>jsoup</artifactId>
+    <version>${jsoup.version}</version>
+  </dependency>
+
+  <!--        JAXB-->
+  <dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>${jaxb.version}</version>
+  </dependency>
+
+  <dependency>
+    <groupId>com.jwebmp.thirdparty</groupId>
+    <artifactId>javax.activation</artifactId>
+    <version>0.68.0.1</version>
+  </dependency>
+
+  <dependency>
+    <groupId>org.glassfish.jaxb</groupId>
+    <artifactId>jaxb-runtime</artifactId>
+    <version>2.3.2</version>
+  </dependency>
+  </dependencies>
+
+</project>
